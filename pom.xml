@@ -14,7 +14,7 @@
   <packaging>jar</packaging>
 
   <name>WebGoat</name>
-  <description>WebGoat, is a deliberately insecure Web Application</description>
+  <description>WebGoat,a deliberately insecure Web Application</description>
   <url>https://github.com/WebGoat/WebGoat</url>
   <inceptionYear>2006</inceptionYear>
   <organization>
