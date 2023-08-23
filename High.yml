@@ -1,0 +1,5 @@
+version: 2
+customFilters:
+  filter: ".runs |= map(if .severity != \"High\" then . else empty end)"
+  pass: "[.runs[] | select(.severity != \"High\")] | length"
+  msg: "High Vulnerabilities found - Build Failed"
