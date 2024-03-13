@@ -1,0 +1,5 @@
+version: 2
+customFilters:
+  filter: ".runs |= map(if .name != \"SQL Injection\" then . else empty end)"
+  pass: "[.runs[] | select(.type != \"SQL Injection\")] | length"
+  msg: "SQL Injection Vulnerabilities found"
